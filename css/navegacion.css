@@ -1,0 +1,30 @@
+.header{
+    background: #ffffff;
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(255,82,82,0.28);
+    -moz-box-shadow: 0px 2px 9px 0px rgba(255,82,82,0.28);
+    box-shadow: 0px 2px 9px 0px rgba(255,82,82,0.28);
+}
+
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;   
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.home{
+    height: 100%;
+}
+
+.nav > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    width: 65%;
+    justify-content: space-around;
+}
+

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+.header{
+    width: 100%;
+}
+
+
+.nav{
+    width: 100%;
+    background: #ffffff;
+    height: 75px;
+    -webkit-box-shadow: 0px 5px 6px -1px rgba(200, 241, 241,0.15);
+    -moz-box-shadow: 0px 5px 6px -1px rgba(200, 241, 241,0.15);
+    box-shadow: 0px 5px 6px -1px rgba(200, 241, 241,0.15);
+}
+
+
+.banner{
+    margin-top: 1%;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:  5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.descripcion_banner{
+    width: 56%;
+    color: rgba(0,0,0,0.8);
+    font-family: sans-serif;
+    font-size: 35px;
+    padding: 2%;
+}
+.image-banner{    
+    width: 42%;
+    background:rgba(200, 241, 241,0.4) ;    
+    height: 100%;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+
+}
+
+.descripcion_imagen{
+    align-content: center;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    height: 100%;
+}
+
+.servicios{    
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;  
+    width: 90%;
+    margin: auto;
+    height: 410px;
+}
+.text_banner{
+    width: 38%;
+    padding: 1%;
+    font-family: sans-serif;
+    font-size: 175%;
+    color: #666666;
+    text-align: match-parent;
+    padding: 4%;
+    
+}
+.btn_conocenos{
+    margin-top: 2%;
+    border-radius: 25px;
+    height: 45px;
+    width: 45%;
+    border: none;
+    background: #009999;
+    color: #ffffff;
+    font-size: 55%;
+    -webkit-box-shadow: 2px 4px 19px -1px rgba(61,158,131,1);
+    -moz-box-shadow: 2px 4px 19px -1px rgba(61,158,131,1);
+    box-shadow: 2px 4px 19px -1px rgba(61,158,131,1)
+}
+
+.card_banner{
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;  
+    width: 60%;
+}
+
+.service{
+    width: 45%;
+    margin: auto;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 4px 19px -1px rgba(188,194,184,1);
+    -moz-box-shadow: 2px 4px 19px -1px rgba(188,194,184,1);
+    box-shadow: 2px 4px 19px -1px rgba(188,194,184,1);
+    height: 190px;
+}
+
+.header_cardService{
+    padding: 2%;
+    font-family: sans-serif;
+    background: yellow;
+    height: 75%;
+}
+
+.footer{
+    display: grid;
+    flex-wrap: wrap;
+}

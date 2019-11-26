@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    background: rgba(162, 162, 162,0.1);
+}
+
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+.header__profile{
+    background: #ffffff00;
+    height: 25vh;
+    width: 25vw;
+}
+.comtenedor_form{
+    width: 40vw;
+}
+.formulario{   
+    padding: 10px;
+    margin: auto;
+}
+
+.input-file{
+    overflow: hidden;
+    background: #3333ff;
+    border-radius: 25px;
+    height: 45px;
+    width:45px;
+    border: none;
+    display: none;
+}
+
+
+.vistaPrevia{
+    height: 80%;
+    width: 100%;
+}
+
+.boton-block{
+    color: rgb(6,113,158);
+    -webkit-box-shadow: inset 0px 0px 0px 3px rgba(6,113,158,1);
+    -moz-box-shadow: inset 0px 0px 0px 3px rgba(6,113,158,1);
+    box-shadow: inset 0px 0px 0px 3px rgba(6,113,158,1);
+}
+
