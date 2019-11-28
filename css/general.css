@@ -6,7 +6,17 @@
     background: #ffffff;
     padding: 2%;
 }
-
+.boton-primario{
+    background: rgba(66, 165, 245,1);
+    width: 60%;
+    height: 15%;
+    border: none;   
+    margin: auto;
+    margin-left: 15px;
+    border-radius: 3px;
+    padding: 2%;
+    
+}
 .boton-block{
      height: 45px;
      width: 100%;
@@ -59,3 +69,21 @@
     background: rgba(27, 113, 47,0.4);
     color:#ffffff;
 }
+
+.form__inline{
+    display: flex;
+    justify-content: space-evenly;  
+    margin: auto;
+}
+
+.card {
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(156,151,156,0.4);
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(156,151,156,0.4);
+    box-shadow: inset 0px 0px 0px 1px rgba(156,151,156,0.4);
+    margin: 2% 2% ;
+    border-radius: 7px;
+    height: 60%;
+    width: 92%;
+    
+}
+
