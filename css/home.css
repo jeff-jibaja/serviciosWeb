@@ -5,26 +5,28 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+/*---------------- header --------------*/
 .header{
     height: 60vh;
     width: 100vw;    
-  background: #159957; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #159957, #155799); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #159957, #155799);
-  display: flex;
-  flex-direction: column;
+    background: #159957; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #159957, #155799); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #159957, #155799);
+    display: flex;
+    flex-direction: column;
 }
 
 .navegacion{
     height: 42px;
     width: 100vw;
+
     z-index: 100;
 }
 
 .nav__ul{
     display: flex;
     justify-content: space-between;
-    margin: auto;
 }
 
 .nav__ul-icon{
@@ -75,7 +77,6 @@
     display: inline-block;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 10px;
     text-decoration: none;
     color: #ffffff;
     width: 100%;
@@ -93,7 +94,7 @@
 .banner{
     display: flex;
     flex-direction: column;
-    height: 75%;
+    height: 76%;
     
 }
 
@@ -131,7 +132,7 @@
 
 
 .wave{
-    width:100vw ;
+    width:100% ;
     height: 15%;   
     overflow: hidden;  
 }
@@ -164,16 +165,16 @@
 .section__conocenos{
     height:  40%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 .conocenos__header{
-    width: 98%;
+    width: 50%;
     margin: 0 auto;
     height: 55%;
-    justify-content: baseline;
-    
+    justify-content: baseline;    
     text-align: left;
 }
 
@@ -195,15 +196,16 @@
 .lista_ventajas_conocenos{
     list-style: none;
     padding-left: 2px;
+    display: none;
 }
 
 .conocenos__body{
     height: 45%;
+    width: 50%;
 }
 .conocenos__body video{
     width: 100%;
     height:100%;
-    object-fit: cover;
 
 }
 
@@ -224,6 +226,7 @@
     font-size: 13x;
     text-align: center;
     height: 20%;
+    margin-bottom: 50px;
 }
 .servicios__container{
     height: 80%;
@@ -241,22 +244,7 @@
 }
 
 
-.card_servicios:nth-child(4){
-    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(21, 99, 141,0.8);
-    -moz-box-shadow: inset 0px 1px 0px 0px rgba(21, 99, 141, 0.8);
-    box-shadow: inset 0px 1px 0px 0px rgba(21, 99, 141, 0.8);
-}
-.card_servicios:nth-child(3){
-    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(21, 99, 141,0.8), 1px 0px 0px 0px rgba(21, 99, 141, 0.8);
-    -moz-box-shadow: inset 0px 1px 0px 0px rgba(21, 99, 141, 0.8), 1px 0px 0px 0px rgba(21, 99, 141, 0.8);
-    box-shadow: inset 0px 1px 0px 0px rgba(21, 99, 141, 0.8), 1px 0px 0px 0px rgba(21, 99, 141, 0.8);
-}
 
-.card_servicios:nth-child(2){
-    -webkit-box-shadow: inset 1px 0px 0px 0px  rgba(21, 99, 141, 0.8);
--moz-box-shadow: inset 1px 0px 0px 0px  rgba(21, 99, 141, 0.8);
-box-shadow: inset 1px 0px 0px 0px  rgba(21, 99, 141, 0.8);
-}
 
 .card_servicios img{
     height: 100%;
@@ -276,9 +264,8 @@ box-shadow: inset 1px 0px 0px 0px  rgba(21, 99, 141, 0.8);
 /*  ----------------------------------- footer.--------------------------------------            */
 
 .footer{
-
-    height: 30vh;
-    width: 100vw;
+    height: 450px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     -webkit-box-shadow: inset 10px 90px 84px -67px rgba(241,241,241,1);
@@ -329,401 +316,230 @@ box-shadow: inset 1px 0px 0px 0px  rgba(21, 99, 141, 0.8);
     box-shadow: 10px 10px 18px -12px rgba(66,165,245,1);
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-span{
-    display: block;
-}
-.navegacion{
-    background: #ffffff;
-    height: 10%;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-}
-.nav__ul{
-    display: flex;
-    justify-content: space-between;
-    color: #ffffff;
-    padding: 25px;
-    text-align: center;
-    list-style: none;
-}
-
-.nav__ul:first-child{
-    margin-left: 10%;
-}
-.nav__ul div{
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-}
-
-.header{
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.banner{
-    margin-top: 5%;
-    height: 420px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom:  5%;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.descripcion_banner{
-    width: 56%;
-    color: rgba(0,0,0,0.8);
-    font-family: sans-serif;
-    font-size: 35px;
-    padding: 2%;
-}
-.image-banner{    
-    width: 42%;
-    background:rgba(200, 241, 241,0.4) ;    
-    height: 100%;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 0px solid #000000;
-
-}
-
-.descripcion_imagen{
-    align-content: center;
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    height: 100%;
-}
-
-
-
-.servicios{    
-    background: rgba(121,121,121,0.10);
-    display: flex;
-    flex-wrap: wrap;  
-    flex-direction: column;
-    height: 80vh;
-    padding-bottom: 25px;
-
-}
-
-.main{
-    display: flex;
-    flex-direction: column-reverse;
-    height: 95vh;
-    margin: none;
-}
-
-.section__conocenos{
-    display: flex;
-    flex-direction: column;
-    height: 30%;
-}
-
-.conocenos__header{
-    width: 100%;
-    height: 20%;
-    text-align: center;
-    padding: 2%;
-}
-
-.desarrollador{
-    display: flex;
-    flex-direction: row;
-    padding: 0 5% ;
-
-}
-
-.body_card p {
-   text-align: justify;
-}
-
-.header_card img{
-  width: fit-content;
-  padding: 5px;
-}
-
-
-.conocenos__contenedor{
-    display: flex;
-    flex-direction: row;
-    height: 80%;
-    width: 70%;
-    margin: auto;
-}
-
-.section__servicios{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background: rgba(121,121,121,0.10);
-    height: 70%;
-}
-
-
-.servicios__container{
-    display: flex;
-    width: 80%;
-    padding-top: 5%;
-}
-
-
-
-.text_banner{
-    width: 38%;
-    font-family: sans-serif;
-    font-size: 175%;
-    color: #666666;
-    text-align: match-parent;
-    background: transparent;
-    padding-top: 8%;
-    padding-left: 4%;
-    
-}
-
-
-
-
-.footer{  
-    height: 45vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-shadow: inset 10px 90px 84px -67px rgba(241,241,241,1);
-    -moz-box-shadow: inset 10px 90px 84px -67px rgba(241,241,241,1);
-    box-shadow: inset 10px 90px 84px -67px rgba(241,241,241,1);
-
-}
-
-.form__footer{
-    background: rgba(132, 169, 175,0.25);
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 4%;
-}
-
-.form__footer > h3 ,p,form{
-    padding: 20px;
-}
-
-.form__footer h3{
-    color: rgba(0,0,0,0.8);
-    font-size: 25px;
-}
-
-.form__footer p {
-    color: rgba(0,0,0,0.6);
-}
-
-.form__inline {
-    width: 30%;
-}
-
-.boton-primario{
-    -webkit-box-shadow: 10px 10px 18px -12px rgba(66,165,245,1);
-    -moz-box-shadow: 10px 10px 18px -12px rgba(66,165,245,1);
-    box-shadow: 10px 10px 18px -12px rgba(66,165,245,1);
-    font-size: 90%;
-}
-
-.contacto__footer{
- background: rgba(10, 84, 95, 0.35);
- width: 100%;
- height: 20%;
-
-}
-
-
-
-@media (max-width: 1500px) { 
-    .section__servicios{
-        flex-direction: column;
-    }
-    .servicios__container{
-        height: 70%;
-        margin: auto;
-    }
-    .text_banner{
-        height: 30%;
-        width: 100%;
-        text-align: center;
-    }
-   
- }
-
- 
-@media (max-width: 1200px) { 
-   
-   .text_banner h2{
-    font-size: 75%;
-    width: 15%;
-    
-   }
-
-   .servicios__container{
-    height: 85%;
-    margin: auto;
-}
-
-   .header{
-       flex-direction: row;
-   }
-
-   .navegacion{
-     width: 100%;
-   }
-
-   .banner{
-        width: 100%;
-   }
-
- }
-
- @media (max-width: 360px) { 
-     
-   .header{
-       height: 32vh;
-       flex-direction: column;
-      
-   }
-   .navegacion{
-       height: 10%;
-       background: #000000;
-
-   }
-  
-
-   .nav__ul div{
-       display: none;
-   }
-
-   .section__conocenos{
-       display: none;
-   }
-
-
-   .banner{
-        height: 80%;
-       width: 90vw;
-       padding-top: 5%;
-   }
-
-   .descripcion_banner{
-       font-size: 12px;
-       width: fit-content;
-       margin-top: 15%;
-       text-align: justify;
-   }
-
-    .image-banner{
+@media(min-width:320px){
+    .lista_ventajas_conocenos{
         display: none;
     }
 
-   .main{
-       height: 90vh;
-       width: 98vw;
-   }
-    .section__servicios{
-         flex-direction: column;
-         height: 100%;
+    .main{
+        height: 650px;
     }
-   
-   .text_banner h2 {
-    font-size: 15px;
-    width: fit-content;
-    margin-bottom: 5px;
-    padding: 5px;
-   }
-   .btn_conocenos{
-       font-size: 12px;
-       height: 25px;
-       width: 27%;
-       
-   } 
 
-   .text_banner{
-       text-align: center;
-   }
+    .section__conocenos{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .conocenos__header p {
+        font-size: 10px;
+        height: 450px;
 
-   .servicios__container{
-       height: 100%;
-       width: 100vw;
-       display: flex;
-       flex-direction: column;   
-   }
+    }
 
-.footer{
-    height: 50vh;
-    width: fit-content;
+    .conocenos__body{
+        display: flex;
+        flex-direction: row;
+    }
+    .conocenos__body video{
+        height: auto;
+        object-fit: cover;
+    }
+    .section__servicios{
+        height: 950px;
+    }
+    .servicios__container{
+        flex-direction: column;
+        height: 600px;
+    }
+    .footer{
+
+        height: 300px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: inset 10px 90px 84px -67px rgba(241,241,241,1);
+        -moz-box-shadow: inset 10px 90px 84px -67px rgba(241,241,241,1);
+        box-shadow: inset 10px 90px 84px -67px rgba(241,241,241,1);
+    
+    }
 }
 
-   .form__footer p,h3,formulario__inline{
-        padding: 5px;
-   }
-   .form__footer h3{
-    font-size: 18px;
-   }
-   .form__footer p{
-    font-size: 14px;
-   }
+@media (min-width: 576px ) { 
+    
 
-   .formulario__inline{
-       width: 80vw;
-   }
+    .navegacion{
+        flex-direction: column;
+        width: 90%;
+        padding: 0  10px;
+        margin: auto;
+        
+    }
 
-   .contacto__footer{
-       height: 10%;
-   }
-   .nav_footer{
-      
-   }
 
-   .ul_li_footer{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-   }
+    .nav__ul-home{
+        width: 10%;
+        padding: 10px 10px;
+        list-style: none;
+    }
+    
+    .lista_ventajas_conocenos{
+        display: block;
+        position: relative;
+    }
 
-   .li_footer{
-       margin-right: 5px;
-   }
+    .nav-ul{
+        margin: none;
+        padding: 0;
+    }
+
+    .nav__ul-li{
+        flex-basis: auto;
+        list-style: none;
+        box-shadow: none;
+        padding:0;
+    }
+    
+    .nav__ul-li a:hover{
+       background: grey;
+      display: inline-block;
+    
+    }
+    
+    .nav__ul-icon{
+        display: none;
+    }
+    .nav-movil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+        position: relative;
+        left: 0px;
+        width: 80%;
+        height: 44px;
+        top: 0px;
+        padding: 0%;
+        margin: 0%;
+        background: transparent;
+    }
+    .banner{        
+       flex-direction: row; 
+       width: 80%;
+       margin: auto;
+    }
+    .main{
+        height: 800px;
+    }
+
+    .section__conocenos{
+        display: flex;
+        height: 42%;
+    }
+    .lista_ventajas_conocenos{
+        display: none;
+    }
+    .conocenos__header,.conocenos__body{
+        height: 100%;
+        
+    }
+    .conocenos__body{
+        padding: 5px ;
+    }
+    .conocenos__body video{
+        height: auto;
+        object-fit: cover;
+    }
+
+    .conocenos__header{
+        padding: 5%;
+    }
+    .conocenos__header h2{
+        font-size: 22px;
+    }
+    .conocenos__header p{
+        font-size: 15px;
+    }
+    
+    .section__servicios{
+        height: 58%;
+    }
+    .footer{
+        height: 250px;
+    }
+}
+
+@media (min-width: 980px) { 
+    .header{
+        height: 80vh;
+        width: 100%;
+    }
+
+ 
+    .navegacion{
+        width: 100%;
+    }
+    .img__banner{
+        width: auto;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .descripcion_banner{
+        font-size: 25px;
+        width: 40%;
+    }
+
+    .wave{
+        height: 150px;
+    }
+
+    .section__conocenos{
+        height: 60vh;
+        width: 100%;
+        flex-direction: column; 
+    } 
+    video{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }   
+    .conocenos__header h2{
+        font-size: 25px;
+    }
+    .conocenos__header p{
+        font-size: 20px;
+    }
+    .conocenos__header li{
+        font-size: 15px;
+        
+    }
+    .lista_ventajas_conocenos{
+        list-style: none;
+        padding-left: 2px;
+    }
+
+    .conocenos__body{
+        height: 90%;
+        width: 50%;
+    }
+
+    .servicios__container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 750px;
+    }
+
+    
+    .card_servicios{
+        height: 100%;
+        width: 24%;
+        box-shadow: none;
+        border: none;
+    }
+
+    .footer{
+        height: 250px;
+        width: 100%;
+    }
 
 }
- */
